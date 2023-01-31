@@ -80,11 +80,17 @@ header a:hover {
     text-decoration: underline;
     color: #ffffff;
     opacity: 1;
+}
 
+header h2:hover {
+    opacity: 1;
 }
 
 #active {
     text-decoration: underline;
+}
+
+#active h2 {
     opacity: 1;
 }
 
