@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
 /* overall */
-header, footer, body {
+h2 {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+h3  {
+    font-size: 20px;
+}
+
+body {
     font-family: 'Archivo', "Open Sans", Verdana, sans-serif;
     color: #ffffff;
+    background-color: #210F51;
+    margin: 5%;
+    background-repeat: no-repeat;
+}
+
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div {
+    margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* header */
@@ -12,6 +38,7 @@ header {
     padding: 10px;
     margin: auto;
     text-decoration: none;
+    height: 120px;
 
     position: fixed;
     top: 0;
@@ -19,44 +46,51 @@ header {
     left: 0;
 }
 
-header a:visited {
-    color: #ffffff;
+header a {
     text-decoration: none;
 }
 
-.headerNav a:visited {
-    text-decoration: none;
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
-    display: inline-block;
+   margin-right: 10px;
+   display: flex;
 }
 
 nav li {
-    display: inline-block;
     color: #ffffff;
     font-size: 24px;
     line-height: 26px;
+    margin-right: 50px;
     text-decoration: none;
+    text-align: right;
 }
 
 .navigationMeny {
     text-decoration: none;
+    list-style-type: none;
+    display: flex;
 }
 
 header a:hover {
     text-decoration: underline;
-    color: aqua;
+    color: #ffffff;
+    opacity: 1;
+
 }
 
 #active {
     text-decoration: underline;
+    opacity: 1;
 }
 
-/* body */
-body {
-    background-color: #210F51;
-    margin: 5%;
+#logo {
+    height: 65px;
+    width: auto;
 }
 
 /* footer */
@@ -71,11 +105,10 @@ footer {
     right: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 100px;
 }
 
 .footer {
-    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -86,38 +119,52 @@ footer a:hover {
     color: aqua;
 }
 
-footer a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* .footer a:visited {
-    color: inherit;
-} */
-
 .footerButton {
     text-decoration: none;
 }
 
 /* msc */
 
+/* Searchbar */
+
+.searchBar {
+    margin-top: 8%;
+    text-align: center;
+}
+
+#searchBar {
+    padding: 10px;
+    font-size: 25px;
+    border: 5px #FFFFFF;
+    color: #ffffff;
+    background-color:#322458;
+    width: 18%;
+}
+
+#searchBarButton {
+    padding: 10px;
+    font-size: 25px;
+    border: 5px #FFFFFF;
+    color: #ffffff;
+    background-color:#150933;
+    width: auto;
+}
+
 /* Carousel */
 
 .carousel {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
+    width: 100%;
 }
 
-.slide {
-    display: inline-block;
-    width: 100%;
-    height: 400px;
-    text-align: center;
+.carousel img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
 }
 
-.imgCarousel {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
+.carousel::-webkit-scrollbar {
+    display: none;
 }
