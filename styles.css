@@ -39,9 +39,10 @@ div {
     box-sizing: border-box;
 }
 
-/* .container {
+.container {
     height: calc(100% - 270px);
-} */
+    min-height: 85vh;
+}
 
 /* header */
 header {
@@ -97,17 +98,15 @@ header h2:hover {
     opacity: 1;
 }
 
-#active {
-    text-decoration: underline;
-}
-
 #active h2 {
+    text-decoration: underline;
     opacity: 1;
 }
 
 #logo {
     height: 65px;
     width: auto;
+    padding-left: 2em;
 }
 
 /* footer */
@@ -157,7 +156,7 @@ footer a:hover {
     border: 5px #FFFFFF;
     color: #ffffff;
     background-color:#322458;
-    width: 18%;
+    width: fit-content;
 }
 
 #searchBarButton {
