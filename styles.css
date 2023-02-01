@@ -182,7 +182,3 @@ footer a:hover {
     height: auto;
     margin-right: 20px;
 }
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
