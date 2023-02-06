@@ -10,16 +10,18 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../assets/SquareEyes_Logo.png" alt="logo" id="logo"></a>
-        <nav class="headerNav">
-            <ul class="navigationMeny">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="libary.html">Libary</a></li>
-                <li><a href="checkout.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header>   
+        <div class="headerNav">
+            <a href="../index.html"><img src="../assets/SquareEyes_Logo.png" alt="logo" id="logo"></a>
+            <nav>
+                <ul class="navigationMeny">
+                    <li><a href="../index.html" id="active"><h2>Home</h2></a></li>
+                    <li><a href="about.html"><h2>About</h2></a></li>
+                    <li><a href="libary.html"><h2>Libary</h2></a></li>
+                    <li><a href="checkout.html"><h2>Cart</h2></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
 
     <div class="container">
         <div>
@@ -30,7 +32,7 @@
             <img src="../images/Square_Eyes_Cover7.jpeg" alt="The batman">
         </div>
         <div>
-            <ul class="movieInfo">
+            <ul class="movieUl">
                 <li class="movieInfo">
                     <p class="info">Release date: </p>
                     <p>04/03/22</p>
@@ -62,11 +64,12 @@
             </ul>
         </div>
         <div>
-
+            <p class="price">19.99 USD</p>
+            <p>ADD TO CART BUTTON COMMING SOON</p>
         </div>
         <div>
-            <p>Description:</p>
-            <p>
+            <h3>Description:</h3>
+            <p id="movieDisc">
                 The batman is a 2022 American superhero film based on the DC Comics character Batman. The film opens on Halloween night when a prestigious Gotham resident is murdered by the eerie and mysterious Riddler. The villain starts targeting more of Gotham’s most influential figures and revealing his motivations only after doing the violent deed. As Jeffrey Wright’s Commissioner Gordon puts it, “Bastard murders you and your reputation.
             </p>
         </div>
