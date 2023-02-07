@@ -34,6 +34,11 @@ a:visited {
     text-decoration: none;
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 div {
     margin: 20px;
 }
