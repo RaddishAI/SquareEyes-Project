@@ -33,6 +33,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     min-height: 100%;
+
 }
 
 a:visited {
@@ -234,8 +235,17 @@ footer a:hover {
 }
 
 .price {
+    display: flex;
     font-size: 30px;
     font-weight: 700;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#addBasket {
+    max-height: 30px;
+    width: auto;
+    padding-left: 10px;
 }
 
 #movieDisc {
