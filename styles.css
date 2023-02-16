@@ -46,10 +46,6 @@ a {
     text-decoration: none;
 }
 
-div {
-    margin: 20px;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -57,8 +53,10 @@ div {
 main {
     height: calc(100% - 270px);
     min-height: 85vh;
+    max-width: auto;
     padding-top: 150px;
     padding-bottom: 150px;
+    margin: 5vh;
 }
 
 /* header */
@@ -173,7 +171,7 @@ footer a:hover {
     border: 5px #FFFFFF;
     color: #ffffff;
     background-color:#322458;
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 #searchBarButton {
@@ -193,6 +191,7 @@ footer a:hover {
     white-space: nowrap;
     padding-top: 20px;
     padding-bottom: 100px;
+    max-width: 70%;
 } 
 
 .carousel img {
@@ -256,3 +255,12 @@ footer a:hover {
 #movieDisc {
     font-size: 20px;
 }
+
+/* grids */
+.indexGrid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+
+/* small screens */
