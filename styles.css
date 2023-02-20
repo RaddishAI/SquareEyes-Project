@@ -66,7 +66,6 @@ header {
     margin: auto;
     text-decoration: none;
     height: 120px;
-
     position: fixed;
     top: 0;
     right: 0;
@@ -122,6 +121,33 @@ header h2:hover {
     height: 65px;
     width: auto;
     padding-left: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .headerNav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav li {
+      margin-right: 0;
+    }
+  
+    .navigationMeny {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    main {
+        margin-top: 50vh;
+        max-width: 90vw;
+    }
 }
 
 /* footer */
@@ -196,9 +222,8 @@ footer a:hover {
     overflow: auto;
     white-space: nowrap;
     padding-top: 20px;
-    padding-bottom: 100px;
    /* max-width: 70%; */
-    width: 100vh;
+    width: 80vw;
     margin: auto;
 } 
 
