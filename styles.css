@@ -142,12 +142,17 @@ header h2:hover {
 
     header {
         height: fit-content;
+        position: relative;
     }
 
     main {
-        margin-top: 50vh;
         max-width: 90vw;
     }
+
+    /* .movie2 {
+        display: grid;
+        grid-template-columns: 100vw;
+    } */
 }
 
 /* footer */
