@@ -151,7 +151,7 @@ header h2:hover {
 
     /* .movie2 {
         display: grid;
-        grid-template-columns: 100vw;
+        grid-template-columns: 1fr;
     } */
 }
 
