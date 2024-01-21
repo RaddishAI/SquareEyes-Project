@@ -15,13 +15,16 @@ function getMovies(){
     });
 }
 
-function displayMovies(){ 
-    const postContainer = document.querySelector('#post-container');
+function displayMovies() { 
+    const postContainers = document.querySelectorAll('.post-container');
 
     data.forEach(product => {
         const generalProductElement = createGeneralProductElement(product);
         generateMoviePage(product); 
-        postContainer.appendChild(generalProductElement);
+        postContainers.forEach(container => {
+            container.appendChild(generalProductElement.cloneNode(true));
+        });
+        console.log(product)
     });
 }
 
