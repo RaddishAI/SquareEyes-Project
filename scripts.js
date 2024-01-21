@@ -54,8 +54,12 @@ function createGeneralProductElement(product) {
 }
 
 getMovies().then(newData => {
-    data = newData
-    displayMovies();
+    data = newData;
+    if(document.URL.includes('library.html')){
+        displayFavoriteMovies();
+    } else {
+        displayMovies();
+    }
 });
 
 
@@ -83,4 +87,24 @@ function generateMoviePage(product) {
         </body>
         </html>
     `;
+}
+
+//movies marked as favourite
+
+function displayFavoriteMovies() {
+    const postContainers = document.querySelectorAll('.post-container');
+    const favoriteMovies = data.filter(product => product.favorite);
+
+    favoriteMovies.forEach(product => {
+        const movieElement = createGeneralProductElement(product);
+
+        movieElement.addEventListener('click', () => {
+            localStorage.setItem('selectedMovie', JSON.stringify(product));
+            window.location.href = `movieDetails.html?id=${product.id}`;
+        });
+
+        postContainers.forEach(container => {
+            container.appendChild(movieElement.cloneNode(true));
+        });
+    });
 }

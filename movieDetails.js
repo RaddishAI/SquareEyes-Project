@@ -5,7 +5,7 @@ const displayMovieDetails = () => {
 
         if (movie) {
             detailsElement.innerHTML = `
-                <a href="index.html"><img src="images/backButton.png" alt="Click here to go back"></a
+                <a href="index.html"><img src="images/backButton.png" alt="Click here to go back"></a>
                 <h3>${movie.title}</h3>
 
                 <div class ="movie1">
