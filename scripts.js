@@ -22,9 +22,15 @@ function displayMovies() {
         const generalProductElement = createGeneralProductElement(product);
         generateMoviePage(product); 
         postContainers.forEach(container => {
-            container.appendChild(generalProductElement.cloneNode(true));
+            let movieElement = generalProductElement.cloneNode(true);
+
+            movieElement.addEventListener('click', () => {
+                localStorage.setItem('selectedMovie', JSON.stringify(product));
+                window.location.href = `movieDetails.html?id=${product.id}`;
+            });
+
+            container.appendChild(movieElement);
         });
-        console.log(product)
     });
 }
 
@@ -39,10 +45,10 @@ function createGeneralProductElement(product) {
         <h2>${product.title}</h2>
     `;
 
-    generalProductElement.addEventListener('click', () => {
+/*     generalProductElement.addEventListener('click', () => {
         localStorage.setItem('selectedMovie', JSON.stringify(product));
         window.location.href = `movieDetails.html?id=${product.id}`;
-    });
+    }); */
 
     return generalProductElement;
 }
