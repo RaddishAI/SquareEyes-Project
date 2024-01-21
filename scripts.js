@@ -96,15 +96,13 @@ function displayFavoriteMovies() {
     const favoriteMovies = data.filter(product => product.favorite);
 
     favoriteMovies.forEach(product => {
-        const movieElement = createGeneralProductElement(product);
-
-        movieElement.addEventListener('click', () => {
-            localStorage.setItem('selectedMovie', JSON.stringify(product));
-            window.location.href = `movieDetails.html?id=${product.id}`;
-        });
-
         postContainers.forEach(container => {
-            container.appendChild(movieElement.cloneNode(true));
-        });
-    });
+            const movieElement = createGeneralProductElement(product);
+            movieElement.addEventListener('click', () => {
+                localStorage.setItem('selectedMovie', JSON.stringify(product));
+                window.location.href = `movieDetails.html?id=${product.id}`;
+            });
+            container.appendChild(movieElement);
+        })
+    })
 }

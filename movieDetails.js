@@ -6,18 +6,24 @@ const displayMovieDetails = () => {
         if (movie) {
             detailsElement.innerHTML = `
                 
-                <h3>${movie.title}</h3>
+                <h1>${movie.title}</h1>
 
                 <div class ="movie1">
                     <div class ="movie2">
-                        <div>
+                        <div class="left">
                         <img src="${movie.image}" alt="Cover of ${movie.title}" class="coverPhoto">
                         </div>
-                        <div>
+                        <div class="right">
                             <ul class="movieUl">
+                                <li class="movieInfo2">
+                                    <h2>Description:</h2>
+                                    <p id="movieDisc">
+                                        ${movie.description}
+                                    </p>
+                                
                                 <li class="movieInfo">
                                     <p class="info">
-                                    Year: </p>
+                                    <h2>Year: </h2>
                                     <p class="backInfo">
                                     ${movie.released}</p>
                                 </li>
@@ -25,18 +31,14 @@ const displayMovieDetails = () => {
                                 <img class="smallLogo" src="images/IMDB.png" alt="IMDB logo">
                                 <p class="backInfo">${movie.rating}</p>
                                 </li>
+                                <li class="movieInfo">
+                                <div class="price">
+                                    <p>${movie.discountedPrice}</p>
+                                    <a href="/pages/checkout.html"><img src="images/addBasket.png" alt="Add to basket" id="addBasket"></a>
+                                </div>
+                                </li>
                             </ul>
-                            <div class="price">
-                            <p>${movie.discountedPrice}</p>
-                            <a href="checkout.html"><img src="images/addBasket.png" alt="Add to basket" id="addBasket"></a>
-                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <h3>Description:</h3>
-                        <p id="movieDisc">
-                            ${movie.description}
-                        </p>
                     </div>
                 </div>
             `;
