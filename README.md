@@ -1,21 +1,41 @@
-# SquareEyes project - README 
+# Square Eyes
 
-Submission
+---
 
-    A link to your prototype/s shared submitted on Moodle for feedback.
+![Portfolio Screenshot](5eZJx6NJ.png)
 
-    Please include a PDF report on the process you went through to complete this CA and the final product.
+## Description
+Square eyes were a project that followed me throguht the year, with several submissions.
+First we were setting up the project, and later on we imported arrays from the schools database. 
 
-    Your report should include a reflection on your submission and must have at least the following main sections:
+---
 
-– introduction
+## Built With
+- HTML
+- CSS
+- JavaScript
 
-– body
+---
 
-– conclusion
+## Live Demo
+You can view the live portfolio [here](https://dashing-mousse-3e5e98.netlify.app/).
 
-– references (if applicable).
+---
 
-Your report must be 700 - 1000 words. Download the report
+## Installation
+To run the project locally:
+git clone https://github.com/RaddishAI/SquareEyes-Project.git
 
-See an example of what we expect to see. Please note this is a visual representation of the content
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RaddishAI/SquareEyes-Project.git
+
+---
+
+## Contact Me
+
+- [LinkedIn](https://www.linkedin.com/in/petter-r%C3%B8nning-80602613a/)
+- [Portfolio](https://raddishaisportfolio.netlify.app/)
+- [Email](mailto:petter.arbeid@gmail.com)
+
+---
